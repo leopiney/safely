@@ -1,0 +1,19 @@
+{
+  "name": "safely",
+  "version": "1.0.0",
+  "description": "Safely access a property for any sort of objects",
+  "main": "./dist/index.js",
+  "repository": "https://github.com/leopiney/safely",
+  "author": "Leonardo Piñeyro",
+  "engines": { "node": ">=6" },
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1"
+  },
+  "scripts": {
+    "build": "babel src --presets babel-preset-env --out-dir dist",
+    "prepublish": "npm run build",
+    "test": "npm run build && node ./dist/test.js"
+  }
+}
